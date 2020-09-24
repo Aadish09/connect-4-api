@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "28713201-88ec-4674-971e-80e4d029bb4e",
+		"name": "Connect4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Start",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiZGF0YSIsImlhdCI6MTYwMDk1MjcxOSwiZXhwIjoxNjAwOTU2MzE5fQ.WfSSYNNAN4V-JA-vgvBfv7xjrgkQwyo-VslkgAowxF9",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"col\":4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/start",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"start"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Moves",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiZGF0YSIsImlhdCI6MTYwMDk2MDg2MCwiZXhwIjoxNjAwOTY0NDYwfQ.bhsiLMf62TjDUoirOw4u-goasMt7vzSKQHM_tIc35nA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"col\":2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/move",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"move"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
